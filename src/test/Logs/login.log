@@ -1,0 +1,21 @@
+16:36:06.612 [main] INFO  - Successfully navigated to the URL https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+16:36:07.138 [main] INFO  - Entered login credentials
+16:36:07.201 [main] INFO  - Clicked login button
+16:36:08.221 [main] INFO  - User navigated to the dashboard
+16:36:10.087 [main] INFO  - User clicked on logout
+16:36:10.094 [main] INFO  - User logout successfully
+16:36:10.336 [main] INFO  - Quitting driver
+20:10:54.295 [main] INFO  - Successfully navigated to the URL https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+20:10:54.902 [main] INFO  - Entered login credentials
+20:10:55.924 [main] INFO  - Clicked login button
+20:10:55.936 [main] INFO  - User navigated to the dashboard
+20:10:57.836 [main] INFO  - User clicked on logout
+20:10:57.843 [main] INFO  - User logout successfully
+20:10:58.089 [main] INFO  - Quitting driver
+17:59:04.273 [main] INFO  - Successfully navigated to the URL https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+17:59:04.889 [main] INFO  - Entered login credentials
+17:59:05.991 [main] INFO  - Clicked login button
+17:59:06.000 [main] INFO  - User navigated to the dashboard
+17:59:07.887 [main] INFO  - User clicked on logout
+17:59:07.891 [main] INFO  - User logout successfully
+17:59:08.091 [main] INFO  - Quitting driver

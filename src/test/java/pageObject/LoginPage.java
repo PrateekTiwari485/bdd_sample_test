@@ -26,6 +26,10 @@ public class LoginPage {
     @CacheLookup
     WebElement btnLogin;
 
+    @FindBy(xpath="//*[text()='Account disabled']")
+    @CacheLookup
+    WebElement txtAccountDisabled;
+
     public String getTitle(){
         return ldriver.getTitle();
     }
@@ -39,5 +43,9 @@ public class LoginPage {
     }
     public void clickLogin() {
         btnLogin.click();
+    }
+
+    public boolean isAccountDiasabled(){
+        return txtAccountDisabled.isDisplayed();
     }
 }

@@ -8,9 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utility.Utility;
+
+import java.time.Duration;
 
 public class DashboardPage{
     public WebDriver ldriver;
+    public Utility ut;
 
     public DashboardPage(WebDriver rdriver){
         ldriver=rdriver;
@@ -30,8 +34,10 @@ public class DashboardPage{
     }
     public void clickLogout(){
         ddlUser.click();
-        Wait<WebDriver> wait = new WebDriverWait(ldriver, 30);
+        Wait<WebDriver> wait = new WebDriverWait(ldriver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOf(linkLogout));
+        ut = new Utility(ldriver);
+        ut.TakeScreenshot(linkLogout,"Screenshot");
         linkLogout.click();
     }
 }
