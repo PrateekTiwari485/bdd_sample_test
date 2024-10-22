@@ -18,10 +18,11 @@ import pageObject.LoginPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class LoginSteps {
-    public WebDriver driver;
+    public static WebDriver driver;
     public LoginPage lp;
     public DashboardPage dsp;
     public static Logger log;
@@ -33,7 +34,7 @@ public class LoginSteps {
         System.setProperty("webdriver.chrome.driver","C://Users//prateek.tiwari//IdeaProjects//bdd_sample_test//src//main//Driver//chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
     @Before
     public void initLogger() {
@@ -51,11 +52,15 @@ public class LoginSteps {
         extent.flush();
     }
 
+    public static WebDriver getDriver(){
+        return driver;
+    }
+
     @Given("I navigate to {string}")
     public void i_navigate_to(String string) {
-       /* System.setProperty("webdriver.chrome.driver","C://Users//prateek.tiwari//IdeaProjects//bdd_sample_test//src//main//Driver//chromedriver.exe");
+        /*System.setProperty("webdriver.chrome.driver","C://Users//prateek.tiwari//IdeaProjects//bdd_sample_test//src//main//Driver//chromedriver.exe");
         driver=new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();*/
         driver.get(string);
         log.info("Successfully navigated to the URL "+string);

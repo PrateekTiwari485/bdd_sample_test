@@ -1,5 +1,5 @@
 Feature: Login
-  As a valid user, I should able to login successfully.
+  As a valid user, I should able to login successfully orange hrm application.
 
   Scenario Outline: As a valid user, I should able to login successfully.
     Given I navigate to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"

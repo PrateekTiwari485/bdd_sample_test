@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C://Users//prateek.tiwari//IdeaProjects//bdd_sample_test//src//test//features//Login.feature",
+        features = "C://Users//prateek.tiwari//IdeaProjects//bdd_sample_test//src//test//features//ProductCatalog.feature",
         glue = "stepDefinitions",
         plugin = { "pretty", "html:target/HtmlReports/reports.html"}
         //plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
